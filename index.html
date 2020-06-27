@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-4.5.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Calculator</title>
+    
+</head>
+
+<body id="gParent">
+    <div class="parent">
+    <div class="child">
+
+        <div>
+            <input id="result" class="result" type="text" onfocus="this.style.backgroundColor = 'lightgrey'">
+        </div>
+        <div>
+            <button type="button" class="clearBtn btn btn-outline-danger" onclick="clearAction()">C</button>
+        </div>
+        <div>
+            <button type="button" class="normalBtn btn btn-outline-success" onclick="getNumber('7')">7</button>
+            <button type="button" class="normalBtn btn btn-outline-success" onclick="getNumber('8')">8</button>
+            <button type="button" class="normalBtn btn btn-outline-success" onclick="getNumber('9')">9</button>
+            <button type="button" class="normalBtn btn btn-outline-info" onclick="getNumber('/')">/</button>
+        </div>
+        <div>
+            <button type="button" class="normalBtn btn btn-outline-success" onclick="getNumber('4')">4</button>
+            <button type="button" class="normalBtn btn btn-outline-success" onclick="getNumber('5')">5</button>
+            <button type="button" class="normalBtn btn btn-outline-success" onclick="getNumber('6')">6</button>
+            <button type="button" class="normalBtn btn btn-outline-info" onclick="getNumber('*')">X</button>
+        </div>
+        <div>
+            <button type="button" class="normalBtn btn btn-outline-success" onclick="getNumber('1')">1</button>
+            <button type="button" class="normalBtn btn btn-outline-success" onclick="getNumber('2')">2</button>
+            <button type="button" class="normalBtn btn btn-outline-success" onclick="getNumber('3')">3</button>
+            <button type="button" class="normalBtn btn btn-outline-info" onclick="getNumber('-')">-</button>
+        </div>
+        <div>
+            <button type="button" class="normalBtn btn btn-outline-success" onclick="getNumber('0')">0</button>
+            <button type="button" class="normalBtn btn btn-outline-success" onclick="getNumber('00')">00</button>
+            <button type="button" class="normalBtn btn btn-outline-warning" onclick="getResult()">=</button>
+            <button type="button" class="normalBtn btn btn-outline-info" onclick="getNumber('+')">+</button>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <p id="para">Made by Muhammad Owais Qadri</p>
+</div>
+</body>
+<script src="app.js"></script>
+
+</html>
